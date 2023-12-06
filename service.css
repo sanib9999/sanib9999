@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar2{
+width: 100%;
+background-color: black;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 25px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 20px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #a91cb9;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #aaff00;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    font-family: poppins;
+}
+.wrapper{
+    width: 1170px;
+    margin: 5% auto;
+}
+.wrapper h2{
+    text-transform: uppercase;
+    font-family: poppins;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    color: orange
+    ;
+    margin: 0;
+}
+.single-service {
+position: relative;
+width: 31%;
+height: 320px;
+background:white;
+box-sizing: border-box;
+padding: 0 15px;
+transition: .5s;
+overflow: hidden;
+float: left;
+margin: 0 10px;
+text-align: center;
+}
+.line {
+width: 200px;
+height: 3px;
+background: rgb(18, 1, 1);
+margin: 0 auto 60px auto;
+}
+.single-service p{            
+    color: #262626;
+    font-size: 14px;
+}
+.single-service h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: poppins;
+    letter-spacing: 1px;
+    color: orange;
+}
+.social {
+width: 00px;
+height: 00px;
+background: blue;
+border-radius: 0%;
+margin: 0% auto;
+}
+.social i {
+font-size: 30px;
+padding: 15px;
+    color:#fff;
+}
+.single-service:hover{
+    box-shadow: 0 30px 35px rgba(0,0,0,0.7);
+}
+.single-service span {
+position: absolute;
+top: 0;
+left: -110%;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.7);
+transition: .7s;
+transform: skewX(10deg);
+}
+.single-service:hover span{
+    left: 110%;
+}
+
+@media (max-width:1200px){
+    .wrapper {
+width: 100%;
+}
+.single-service {
+width: 95%;
+margin-bottom: 30px;
+}
+.wrapper h2 {
+font-size: 30px;
+}
+}
+@media screen and (max-width:1200px) {
+    /*Normal Screen*/
+
+    .navbar{
+        width: 100%;
+        height: 100px;
+    }
+    ul{
+        margin-left: 30px;
+    }   
+    ul li{
+        margin-left: 60px;
+    }
+    ul li a{
+       font-size: 1.6vw; 
+    }
+    .search{
+        margin-top: 3px;
+        margin-left: 290px;
+    }
+    .srch{
+        height: 40px;
+        width: 190px;
+        font-size: 14px;
+    }
+    .btn{
+        height:40px;
+        width: 80px;
+    }
+    .wrapper {
+        width: 100%;
+        }
+        .single-service {
+        width: 95%;
+        margin-bottom: 30px;
+        }
+        .wrapper h2 {
+        font-size: 30px;
+        }
+}
+
+
+
+@media screen and (max-width: 830px){
+    /*For tablet*/
+   
+    .content{
+        margin-top: 120px;
+        width: 80%;   
+        margin-left: 40px;  
+    }
+    .content h1, .content span{
+        font-size: 6vw; 
+    }
+    .content .par{
+        width: 90%;
+        font-size: 1.8vw;
+    }
+    .content .cn{
+        width: 15%;
+        height: 4.5vw;
+        font-size: 2vw;
+    }
+    .content a{
+        font-size: 2vw
+    }
+    .logo{
+        margin-left: 240px;
+        width: 100%;
+        margin-top: 15px;
+        font-size: 5vw;
+    }
+    .menu{
+        width: 100%;
+    }
+    ul{
+        margin-top: -5px;
+        margin-left: 5px;
+    }
+    ul li{
+        margin-left: 60px;
+    }
+    ul li a{
+       font-size: 2vw; 
+    }
+    .search{
+        margin-top: -20px;
+        margin-left: 60px;   
+    }   
+    .srch{
+        height: 30px;
+        width: 160px;
+        font-size: 12px;
+    }
+    .btn{
+        height:30px;
+        width: 70px;
+    }
+    .main{
+        padding-left: 20px;
+        height: 180vh;
+    }
+    
+    .btnn a{
+        font-size: 16px;
+    }
+    .form .link a{
+        font-size: 16px;
+    }
+    .wrapper {
+        width: 100%;
+        }
+        .single-service {
+        width: 80%;
+        margin-bottom: 25px;
+        }
+        .wrapper h2 {
+        font-size: 25px;
+        }
+}
+
+@media screen and (max-width: 600px){
+    /*IPAD*/
+    
+    .content{
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+    .search{
+        margin-top: -40px;
+        margin-left: 42px;
+    }
+    .logo{
+        margin-left: 180px;
+        font-size: 4vw;
+    }
+    ul{
+        margin-top: -25px;
+        margin-left: -5px;
+    }
+    ul li {
+        margin-left: 50px;
+    }
+    ul li a{
+        font-size: 2vw;
+    } 
+    .wrapper {
+        width: 80%;
+        }
+        .single-service {
+        width: 85%;
+        margin-bottom: 20px;
+        }
+        .wrapper h2 {
+        font-size: 20px;
+        }  
+}
+
+@media screen and (max-width: 450px){
+    /*mobile*/
+    .logo{
+        margin-left: 140px;
+        font-size: 4vw;
+    }
+    ul{
+        margin-top: -25px;
+    }
+    ul li {
+        margin-left: 42px;
+    }
+    ul li a{
+        font-size: 2vw;
+    }  
+    .search{
+        margin-top: -40px;
+        margin-left: 38px;
+    } 
+    .wrapper {
+        width: 70%;
+        }
+        .single-service {
+        width: 75%;
+        margin-bottom: 10px;
+        }
+        .wrapper h2 {
+        font-size: 10px;
+        }
+
+}
